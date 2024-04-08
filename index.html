@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'inscription</title>
+</head>
+<body>
+  <form  action="recup.php" method="POST">
+    <fieldset>
+        <legend>Vos coordonnées</legend>
+        <p>
+            <label for="iprenom">Prénom:</label> <br>
+            <input type="text" name="prenom" id="iprenom" placeholder="François">
+        </p>
+        <p> <label for="inom">Nom:</label> <br>
+            <input type="text" name="nom" id="inom" placeholder="Dupont">
+        </p>
+        <p>
+            <label for="iage">Age:</label> <br>
+            <input type="number" name="age" id="iage" min="1" max="100">
+        </p>
+        <p>Sexe: <br>
+            <input type="radio" name="genre" id="ifemme">
+            <label for="ifemme">Féminin</label> <br>
+            <input type="radio" name="genre" id="ihomme">
+            <label for="ihomme">Masculin</label> <br>
+            <input type="radio" name="genre" id="iautre">    
+            <label for="iautre">Autre</label>         
+        </p>   
+        <p><label for="iemail">Adresse Mail:</label>  <br>
+            <input type="email" name="email" id="iemail" placeholder="nom_utilisateur@nom_email">  <br>
+        </p>
+        <p>
+            <label for="iadresse">Adresse postale:</label>
+            <input type="text" name="adresse" id="iadresse" >
+        </p>
+        <p>
+            <label for="icp">Code Postal</label>
+            <input type="text" name="cp" id="icp" maxlength="5" placeholder="XXXXX">
+        </p>   
+        <p>
+            <label for="iville">Ville</label>
+            <input type="text" name="ville" id="iville">
+        </p>  
+        <p>Métier exercé:</p>
+        <select name="metier">
+            <option>Avocat</option>
+            <option>Medicin</option> 
+            <option>Infirmier</option>
+            <option>Boulanger</option>
+            <option value="">Manager</option>
+        </select>  
+        <p>Nationalité:</p>
+        <select name="nationalité">
+            <option selected>Français</option>
+            <option>Italien</option> 
+            <option>Espagnol</option>
+            <option>Allemand</option>
+            <option>Portugais</option>
+            <option value="">Américain</option>
+        </select>
+        <p>
+            <label for="date_naissance">Date de naissance:</label>
+            <input type="date" name="date_naissance" id="date_naissance">
+        </p>
+        <p>
+            <label for="pays_naissance">Pays de naissance:</label>
+            <input type="text" name="pays_naissance" id="pays_naissance">
+        </p> 
+        <p> <label for="sécurité_social">Numéro de sécurité social:</label>
+            <input type="text" name="sécurité_social" id="sécurité_social" maxlength="15">
+        </p>
+        <p>
+            <label for="passeport">Numero du passeport:</label>
+            <input type="text" name="passeport" id="passeport">
+        </p>
+        <p>
+            <label for="date_délivrance">Date de délivrance du passeport:</label>
+            <input type="date" name="date_délivrance" id="date_délivrance">
+        </p>
+        <p>
+            <label for="date_validité">Date de validité du passeport:</label>
+            <input type="date" name="date_validité" id="date_validité">
+        </p>
+        <button type="submit">Envoyer</button>
+    </fieldset>
+  </form>  
+</body>
+</html>
